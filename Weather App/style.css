@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&family=Roboto&display=swap');
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 94vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: #222;
+    background-image: url(bg.jpg);
+    font-size: 100%;
+    
+
+}
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 1.3em;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 420px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding:  0.4em 0.3em;
+    border-radius: 18px;
+    background: antiquewhite;
+    color: black;
+    font-family: math;
+    font-size: 110%;
+}
+button {
+    margin: 0.5em;
+    border-radius: 50%;
+    border: none;
+    width: 46px;
+    height: 35px;
+    outline: none;
+    cursor: pointer;
+    background-color: #7c7c7c2b;
+    color: white;
+    transition: 0.2s ease-in-out;
+}
+button:hover {
+    background: #7c7c7c6b;
+}
+
+h1.temp{
+    margin: 0;
+}
+.description{
+    text-transform: capitalize;
+}
+.weather.loading{
+    visibility: hidden;
+    max-height: 2px;
+
+}
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    left: 20px;
+
+}
